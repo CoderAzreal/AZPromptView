@@ -13,6 +13,7 @@
 		73A2F2761EF58F0200E05C6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73A2F2751EF58F0200E05C6E /* Assets.xcassets */; };
 		73A2F2791EF58F0200E05C6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73A2F2771EF58F0200E05C6E /* LaunchScreen.storyboard */; };
 		73A2F2821EF58F2300E05C6E /* AZPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A2F2811EF58F2300E05C6E /* AZPromptView.swift */; };
+		73F173B91F18844C00F3E93D /* AZPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F173B81F18844C00F3E93D /* AZPromptView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		73A2F2781EF58F0200E05C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73A2F27A1EF58F0200E05C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73A2F2811EF58F2300E05C6E /* AZPromptView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AZPromptView.swift; sourceTree = "<group>"; };
+		73F173B71F18844C00F3E93D /* AZPromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZPromptView.h; sourceTree = "<group>"; };
+		73F173B81F18844C00F3E93D /* AZPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZPromptView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				73A2F2811EF58F2300E05C6E /* AZPromptView.swift */,
+				73F173B71F18844C00F3E93D /* AZPromptView.h */,
+				73F173B81F18844C00F3E93D /* AZPromptView.m */,
 			);
 			path = AZPromptView;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 					73A2F26A1EF58F0200E05C6E = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 82G9ZZBL2X;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -149,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73A2F2711EF58F0200E05C6E /* ViewController.swift in Sources */,
+				73F173B91F18844C00F3E93D /* AZPromptView.m in Sources */,
 				73A2F2821EF58F2300E05C6E /* AZPromptView.swift in Sources */,
 				73A2F26F1EF58F0200E05C6E /* AppDelegate.swift in Sources */,
 			);
@@ -275,11 +282,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 82G9ZZBL2X;
 				INFOPLIST_FILE = AZPromptView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Azreal.AZPromptView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -288,11 +298,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 82G9ZZBL2X;
 				INFOPLIST_FILE = AZPromptView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Azreal.AZPromptView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -316,6 +328,7 @@
 				73A2F27F1EF58F0200E05C6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
